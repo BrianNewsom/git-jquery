@@ -1,0 +1,16 @@
+each item in items
+    div.row 
+        div.four.columns
+            p
+                b= item.type
+        div.six.columns
+            p= item.repo.name
+        div.two.columns
+            p= item.created_at
+    div.row
+        div.six.columns
+            p= 'By: ' + item.actor.login
+        div.six.columns
+            p= 'URL: ' + item.actor.url
+
+
