@@ -10,6 +10,7 @@ function myEvents(){
             var html = jade.render(template, {items: events})
             $('#list').html(html)
             myEvent(events[0].id)
+            $('#details').html('');
         })
     })
 }
