@@ -6,3 +6,13 @@ each item in items
         div.six.columns
             = item.open_issues
             |  issues
+    div.row
+        div.four.columns
+            =item.id
+        div.four.columns
+            if item.private
+                p Private
+            else
+                p Public
+        div.four.columns
+            p='Fork: ' + item.fork
